@@ -1,4 +1,4 @@
-const String calenderIcon = 'assets/icons/calender.svg';
+const String calenderIcon = 'assets/icons/calendar.svg';
 const String codeIcon = 'assets/icons/code.svg';
 const String homeIcon = 'assets/icons/home.svg';
 const String installIcon = 'assets/icons/install.svg';

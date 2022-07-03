@@ -16,7 +16,7 @@ class BottomIcons extends StatelessWidget {
       children: [
         SidebarIconMakerSVG(
           iconColor: colorTheme.primaryColor,
-          svgPath: codeIcon,
+          svgPath: settingsIcon,
         ),
       ],
     );

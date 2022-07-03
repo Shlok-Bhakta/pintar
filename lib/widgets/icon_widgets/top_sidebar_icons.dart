@@ -16,7 +16,7 @@ class TopIcons extends StatelessWidget {
       children: [
         SidebarIconMakerSVG(
           iconColor: colorTheme.primaryColor,
-          svgPath: paintIcon,
+          svgPath: menuIcon,
         ),
       ],
     );
