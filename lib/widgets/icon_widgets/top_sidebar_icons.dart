@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pintar/widgets/icon_widgets/icons.dart';
-import 'package:pintar/widgets/icon_widgets/sidebar_icon_maker_svg.dart';
+import 'package:pintar/widgets/icon_widgets/bar_icon_maker_svg.dart';
 
 import '../../other/color_theme.dart';
+import '../sidebar_spacer_maker.dart';
 
 ColorTheme colorTheme = ColorTheme();
 
@@ -14,7 +15,8 @@ class TopIcons extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        SidebarIconMakerSVG(
+        const SidebarSpacer(),
+        BarIconMakerSVG(
           iconColor: colorTheme.primaryColor,
           svgPath: menuIcon,
         ),

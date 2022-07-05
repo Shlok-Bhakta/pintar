@@ -7,20 +7,24 @@ import '../sidebar_spacer_maker.dart';
 
 ColorTheme colorTheme = ColorTheme();
 
-class BottomIcons extends StatelessWidget {
-  const BottomIcons({Key? key}) : super(key: key);
+class LeftIcons extends StatelessWidget {
+  const LeftIcons({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        BarIconMakerSVG(
-          iconColor: colorTheme.primaryColor,
-          svgPath: settingsIcon,
+        Row(
+          children: [
+            const SidebarSpacer(),
+            BarIconMakerSVG(
+              iconColor: colorTheme.primaryColor,
+              svgPath: menuIcon,
+            ),
+          ],
         ),
-        const SidebarSpacer(),
       ],
     );
   }

@@ -6,8 +6,8 @@ const double defaultSize = 40;
 const double buttonWidthOffset = 5;
 const double edgeInsetsValue = 10;
 
-class SidebarIconMakerSVG extends StatelessWidget {
-  const SidebarIconMakerSVG(
+class BarIconMakerSVG extends StatelessWidget {
+  const BarIconMakerSVG(
       {Key? key,
       this.backgroundColor,
       required this.iconColor,
@@ -41,7 +41,7 @@ class SidebarIconMakerSVG extends StatelessWidget {
             semanticsLabel: 'Paint Fill Icon',
           ),
           onPressed: () {
-            debugPrint("hiii");
+            debugPrint(MediaQuery.of(context).size.height.toString());
           }),
     );
   }

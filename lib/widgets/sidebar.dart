@@ -16,7 +16,8 @@ class SideBar extends StatelessWidget {
       color: colorTheme.getSecondaryColor(),
       width: sidebarWidth,
       height: double.infinity,
-      child: Stack(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: const [
           Align(
             alignment: Alignment.topCenter,
@@ -35,5 +36,3 @@ class SideBar extends StatelessWidget {
     );
   }
 }
-
-//todo ayo make it so the sidebar can scroll, it fixes issues later on
